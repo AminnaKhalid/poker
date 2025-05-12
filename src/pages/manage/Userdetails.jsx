@@ -13,7 +13,7 @@
   import seeall from "./assets/seeallarrow.png";
   import pdf from "./assets/pdf.png";
   import clock from "./assets/time.png";
-  import slider from "./assets/slider.png";
+  import slider from "./assets/Slider.png";
   import SigninModal from "./SigninModal";
   import DocumentModal from "./DocumentModal";
 import add from "../components/assets/add.png"
