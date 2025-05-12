@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .grid {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ;
+    }
+
+    .dash_title {
+        @apply font-normal text-2xl text-gray-400 leading-8;
+    }
+
+    .dash_subtitle {
+        @apply font-bold text-4xl text-[#301820];
+    }
+
+    .row{
+        @apply flex flex-row;
+    }
+
+    .mainsec{
+        @apply bg-[#FAFAFA] text-black px-7 py-7 h-[calc(100vh-80px)] overflow-y-auto;
+    }
+
+   .dashcard {
+       @apply bg-white rounded-lg shadow-md px-6 py-6 space-y-2 mt-4 md:mt-6 transition-all duration-500 ease-in-out transform  hover:shadow-lg;
+   }
+
+   .request_title{
+    @apply font-normal text-lg text-[#777E90]
+   }
+   .request_sub{
+    @apply font-medium text-lg text-black
+   }
+   .request_btn{
+   @apply  font-medium text-lg w-full py-2 px-3 rounded-lg cursor-pointer  text-center
+   }
+   .setting_title{
+    @apply font-medium text-2xl leading-7 ;
+   }
+   .setting_text{
+    @apply text-[#00000080] font-normal text-lg;
+   }
+   .userstable{
+    @apply border border-[#98A79E4D] p-2 flex justify-center items-center
+   }
+   .userstext{
+    @apply text-xs md:text-sm font-[600] 
+   }
+   .userdetail{
+    @apply font-normal text-sm
+   }
+   .userfigure{
+    @apply font-medium text-lg
+   }
+   .mainhead{
+    @apply font-semibold md:font-bold text-lg  md:text-3xl
+   }
+   .maintitle{
+@apply font-medium text-[16px]
+   }
+   .mainsub{
+@apply text-gray-500 font-normal text-sm
+   }
+}
