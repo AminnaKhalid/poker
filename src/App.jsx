@@ -7,6 +7,7 @@ import Qr from './pages/components/Qr';
 import Settings from './pages/settings/Settings';
 import Manage from './pages/manage/Manage';
 import Userdetails from './pages/manage/Userdetails';
+import Login from './pages/components/Login';
 
 function App() {
 
@@ -14,7 +15,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+
           <Route path="/request" element={<Requests />} />
           <Route path="/request/detail" element={<Details />} />
           <Route path="/qr" element={<Qr />} />

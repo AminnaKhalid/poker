@@ -23,8 +23,8 @@ const Navbar = () => {
     {
       icon: home,
       darkicon: darkhome,
-      path: "/",
-      matchPaths: ["/"],
+      path: "/dashboard",
+      matchPaths: ["/dashboard"],
     },
     {
       icon: manage,

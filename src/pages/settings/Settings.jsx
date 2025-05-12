@@ -8,7 +8,7 @@ import Terms from "./Terms";
 import Modal from "./Modal";
 import back from "./assets/backarrow.png";
 import FaqModal from "./FaqModal";
-
+import add from "../components/assets/add.png"
 const Settings = () => {
   const [ActiveTab, setActiveTab] = useState("About");
   const [showModal, setShowModal] = useState(false);
@@ -85,9 +85,12 @@ const Settings = () => {
               </div>
               <button
                 onClick={() => setShowModal(true)}
-                className="rounded-xl bg-black text-white px-4 py-3 cursor-pointer font-normal text-sm md:text-base w-full md:w-40 flex items-center justify-center"
+                className="rounded-xl bg-black text-white px-4 py-3 cursor-pointer font-normal text-sm md:text-base  flex items-center justify-center"
               >
-                <span className="text-lg md:text-2xl mr-2">+</span>{" "}
+                {/* <span className="text-lg md:text-2xl mr-2">
+
+                </span> */}
+                <img src={add} alt="" className="w-3 h-3 mr-4" />
                 {getButtonText()}
               </button>
             </div>

@@ -16,7 +16,7 @@
   import slider from "./assets/slider.png";
   import SigninModal from "./SigninModal";
   import DocumentModal from "./DocumentModal";
-  import Pagination from "../components/Pagination"
+import add from "../components/assets/add.png"
   const Userdetails = () => {
     const data = [{ image: complete }, { image: upcoming }, { image: active }];
 
@@ -235,10 +235,10 @@
                   <div className="flex justify-between flex-col md:flex-row items-center ">
                     <span className="mainhead">Documents</span>
                     <button
-                      className="bg-[#212325] text-white px-5 py-3 rounded-xl cursor-pointer"
+                      className="bg-[#212325] text-white px-5 py-3 rounded-xl cursor-pointer flex justify-center items-center"
                       onClick={() => setOpenDocument(true)}
                     >
-                      + Add Documents
+                      <img src={add} alt="" className="w-3 h-3 mr-2"/> Add Documents
                     </button>
                   </div>
                   {/* for document modal */}
