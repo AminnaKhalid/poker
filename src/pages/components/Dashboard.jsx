@@ -38,14 +38,15 @@ const Dashboard = () => {
             {/* Cards section */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {data.map((item, index) => (
-                <div key={index} className="dashcard flex flex-col">
+                <div
+                  key={index}
+                  className="dashcard flex flex-col border-[1px] border-[#0000001A] rounded-xl"
+                >
                   <span className="dash_title">{item.title}</span>
                   <span className="dash_subtitle">{item.subtitle}</span>
                 </div>
               ))}
             </div>
-
-         
           </div>
         </div>
       </div>

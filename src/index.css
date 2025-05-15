@@ -44,7 +44,7 @@
     @apply text-[#00000080] font-normal text-lg;
    }
    .userstable{
-    @apply border border-[#98A79E4D] p-2 flex justify-center items-center
+    @apply border border-[#98A79E4D] p-2 flex justify-center items-center 
    }
    .userstext{
     @apply text-xs md:text-sm font-[600] 
